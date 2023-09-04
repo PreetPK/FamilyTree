@@ -25,6 +25,6 @@ You can run test cases by using
 
 ## About the Challenge
 
-I have completed 2 Problems with some unit test cases by using jest.
-Problem 1: Finding brothers and sisters
+I have completed 2 Problems with some unit test cases by using jest.\
+Problem 1: Finding brothers and sisters\
 Problem 2: Adding a new born child to mothers.
