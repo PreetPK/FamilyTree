@@ -1,0 +1,112 @@
+{
+  "kingShan": {
+    "name": "King Shan",
+    "gender": "male",
+    "spouse": "Queen Anga",
+    "children": [
+      {
+        "name": "Ish",
+        "gender": "male",
+        "spouse": null,
+        "children": []
+      },
+      {
+        "name": "Chit",
+        "gender": "male",
+        "spouse": "Ambi",
+        "children": [
+          {
+            "name": "Drita",
+            "gender": "male",
+            "spouse": "Jaya",
+            "children": [
+              {
+                "name": "Jata",
+                "gender": "male",
+                "spouse": null,
+                "children": []
+              },
+              {
+                "name": "Driya",
+                "gender": "female",
+                "spouse": "Mnu",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Vrita",
+            "gender": "male",
+            "spouse": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Vich",
+        "gender": "male",
+        "spouse": "Lika",
+        "children": [
+          {
+            "name": "Vila",
+            "gender": "male",
+            "spouse": "Jnki",
+            "children": [
+              {
+                "name": "Lavnya",
+                "gender": "female",
+                "spouse": "Gru",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Chika",
+            "gender": "female",
+            "spouse": "Kpila",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Satya",
+        "gender": "female",
+        "spouse": "Vyan",
+        "children": [
+          {
+            "name": "Satvy",
+            "gender": "female",
+            "spouse": "Asva",
+            "children": []
+          },
+          {
+            "name": "Savya",
+            "gender": "male",
+            "spouse": "Krpi",
+            "children": [
+              {
+                "name": "Kriya",
+                "gender": "male",
+                "spouse": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Saayan",
+            "gender": "male",
+            "spouse": "Mina",
+            "children": [
+              {
+                "name": "Misa",
+                "gender": "male",
+                "spouse": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
