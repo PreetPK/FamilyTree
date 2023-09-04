@@ -40,7 +40,6 @@ const RelationshipDropdown: React.FC<RelationshipProps> = ({ treeData }) => {
       selectedPerson,
       selectedRelationship
     );
-    console.log(relatedMembers);
 
     if (Array.isArray(relatedMembers)) {
       setSelectedResult(relatedMembers);
@@ -61,7 +60,6 @@ const RelationshipDropdown: React.FC<RelationshipProps> = ({ treeData }) => {
       const selectedPerson = kingShan.children.find(
         (child: any) => child.name === selectedPersonName
       );
-      console.log(selectedPerson);
       if (selectedPerson) {
         kingShan.children.forEach((child: any) => {
           if (

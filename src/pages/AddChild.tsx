@@ -41,12 +41,9 @@ const AddChild: React.FC<AddChildProps> = ({
     personName: string
   ): FamilyMember | undefined {
     function findRecursive(node: any): FamilyMember | undefined {
-      console.log(node);
-      console.log(personName);
       if (node.name === personName) {
         return node;
       }
-
       if (node.children && node.children.length > 0) {
         for (const child of node.children) {
           const result = findRecursive(child);

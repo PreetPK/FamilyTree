@@ -17,14 +17,9 @@ const FindRelationship: React.FC<RelationshipProps> = ({
   ): string | null => {
     const findUncles = (person: FamilyMember): string[] => {
       const uncles: string[] = [];
-
-      // Find the person's father
-      console.log(person);
       const father = familyTree.kingShan.children.find(
         (child) => child.name === person.name
       );
-      console.log(father);
-      // Check if the father has siblings (brothers)
       if (father) {
         const fatherSiblings = familyTree.kingShan.children.filter(
           (child) => child.name !== father.name && child.gender === "male"
@@ -38,10 +33,9 @@ const FindRelationship: React.FC<RelationshipProps> = ({
     const findMotherInLaw = (person: FamilyMember): string | null => {
       const spouse = person.spouse;
       if (!spouse) {
-        return null; // No spouse, so no mother-in-law
+        return null;
       }
 
-      // Find the spouse's mother
       const spouseMother = familyTree.kingShan.children.find(
         (child) => child.name === spouse && child.gender === "female"
       );
@@ -52,10 +46,9 @@ const FindRelationship: React.FC<RelationshipProps> = ({
     const findFatherInLaw = (person: FamilyMember): string | null => {
       const spouse = person.spouse;
       if (!spouse) {
-        return null; // No spouse, so no father-in-law
+        return null;
       }
 
-      // Find the spouse's father
       const spouseFather = familyTree.kingShan.children.find(
         (child) => child.name === spouse && child.gender === "male"
       );
@@ -68,7 +61,7 @@ const FindRelationship: React.FC<RelationshipProps> = ({
     );
 
     if (!person) {
-      return null; // Person not found in the family tree
+      return null;
     }
 
     switch (relationship) {
@@ -85,7 +78,7 @@ const FindRelationship: React.FC<RelationshipProps> = ({
         return fatherInLaw ? fatherInLaw : "No Father-in-law";
 
       default:
-        return null; // Invalid relationship
+        return null;
     }
   };
 
